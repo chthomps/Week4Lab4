@@ -2,7 +2,7 @@
 public class Account {
 
 	public static int numAccounts = 0;
-	private static String phrase;
+	private static String accountNumber;
 
 	public static void main(String[] args) {
 
@@ -18,29 +18,19 @@ public class Account {
 		System.out.println("acct3");
 
 		System.out.println();
-		System.out.println("Accounts created: " + Account.getCount());
+		System.out.println("Accounts created: " + Account.getNumAccounts());
 	}
 
 	// Constructor Method for Account object
-	public Account(String accountNumber) {
-		phrase = accountNumber;
+	public Account(String acct) {
+		accountNumber = acct;
+		numAccounts++;
 	}
 
 	// Method for incrementing account instances
 	public static int getNumAccounts() {
-		phrase = str;
-		numAccounts++;
-	}
 
-	public String toString() {
-		return phrase;
-	}
-
-	// returns number of instance of this class created
-
-	public static int getCount() {
 		return numAccounts;
-
 	}
 
 }
