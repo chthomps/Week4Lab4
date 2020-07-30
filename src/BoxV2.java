@@ -16,7 +16,7 @@ public class BoxV2 {
 		BoxV2 Box1 = new BoxV2();
 		BoxV2 Box2 = new BoxV2();
 
-		BoxV2.size = 4;
+		Box1.size = 4;
 		Box1.printBox();
 
 		Box2.size = 8;
